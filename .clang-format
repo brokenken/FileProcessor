@@ -1,0 +1,108 @@
+Language: Cpp
+BasedOnStyle: LLVM
+
+Standard: c++20
+ColumnLimit: 120
+
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+
+AccessModifierOffset: -4
+NamespaceIndentation: All
+IndentCaseBlocks: true
+IndentCaseLabels: true
+IndentPPDirectives: None
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterCaseLabel: true
+  AfterClass: true
+  AfterControlStatement: false
+  AfterEnum: true
+  AfterFunction: true
+  AfterNamespace: true
+  AfterStruct: true
+  AfterUnion: true
+  AfterExternBlock: false
+  BeforeCatch: true
+  BeforeElse: false
+  BeforeLambdaBody: true
+  BeforeWhile: false
+  SplitEmptyFunction: true
+  SplitEmptyRecord: true
+  SplitEmptyNamespace: true
+
+BreakConstructorInitializers: AfterColon
+ConstructorInitializerIndentWidth: 4
+
+PointerAlignment: Left
+ReferenceAlignment: Left
+DerivePointerAlignment: false
+
+AlignAfterOpenBracket: DontAlign
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignConsecutiveMacros: false
+AlignEscapedNewlines: DontAlign
+AlignOperands: DontAlign
+AlignTrailingComments: false
+
+AllowAllArgumentsOnNextLine: true
+AllowAllConstructorInitializersOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortBlocksOnASingleLine: Empty
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine: Empty
+AllowShortLoopsOnASingleLine: false
+
+AlwaysBreakTemplateDeclarations: Yes
+BinPackArguments: false
+BinPackParameters: false
+
+Cpp11BracedListStyle: true
+SpaceBeforeCpp11BracedList: false
+
+SortIncludes: CaseSensitive
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex: '^<Qt'
+    Priority: 1
+  - Regex: '^<Q'
+    Priority: 2
+  - Regex: '^<.*'
+    Priority: 3
+  - Regex: '^".*'
+    Priority: 4
+  - Regex: '.*'
+    Priority: 5
+IncludeIsMainRegex: '([-_](test|unittest))?$'
+
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesInAngles: Never
+SpacesInConditionalStatement: false
+SpacesInCStyleCastParentheses: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+
+MaxEmptyLinesToKeep: 2
+InsertNewlineAtEOF: true
+
+MacroBlockBegin: ''
+MacroBlockEnd: ''
+
+ForEachMacros:
+  - foreach
+  - Q_FOREACH
+
+StatementMacros:
+  - Q_OBJECT
+  - Q_GADGET
+  - Q_PROPERTY
+  - Q_SIGNALS
+  - Q_SLOTS
+  - Q_EMIT
