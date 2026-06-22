@@ -1,0 +1,88 @@
+# Build directories
+/build/
+/cmake-build-*/
+/out/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake.user
+compile_commands.json
+
+# Ninja
+.ninja_deps
+.ninja_log
+build.ninja
+
+# CLion / JetBrains
+.idea/
+*.iml
+
+# Qt generated files
+*_autogen/
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+
+# Qt Creator
+*.pro.user
+*.pro.user.*
+CMakeLists.txt.user
+CMakeLists.txt.user.*
+
+# vcpkg manifest local install
+/vcpkg_installed/
+/vcpkg-manifest-install.log
+
+# Executables and binaries
+*.exe
+*.dll
+*.lib
+*.a
+*.so
+*.dylib
+*.pdb
+*.ilk
+*.exp
+
+# Object files
+*.o
+*.obj
+
+# Debug / crash / logs
+*.log
+*.stackdump
+*.dmp
+
+# Runtime copied Qt files
+/platforms/
+/qml/
+/plugins/
+/translations/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Test data / large files
+/test_input/
+/test_output/
+/data/
+/input/
+/output/
+*.bin
+/cmake-build-debug/
